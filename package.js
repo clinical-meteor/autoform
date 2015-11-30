@@ -1,16 +1,18 @@
 Package.describe({
-  name: "aldeed:autoform",
+  name: "clinical:autoform",
   summary: "Easily create forms with automatic insert and update, and automatic reactive validation.",
-  git: "https://github.com/aldeed/meteor-autoform.git",
-  version: "5.7.1"
+  git: "https://github.com/clinical-meteor/clinical-autoform.git",
+  version: "6.7.1"
 });
 
 Package.onUse(function(api) {
   // Dependencies
-  api.versionsFrom(['METEOR@0.9.3', 'METEOR@0.9.4', 'METEOR@1.0']);
+  api.versionsFrom('METEOR@1.1.0.3');
+
   // common
   api.use('aldeed:simple-schema@1.1.0');
   api.use('check');
+
   // client
   api.use(['livedata', 'underscore', 'deps', 'templating', 'ui', 'blaze', 'ejson', 'reactive-var', 'reactive-dict', 'random', 'jquery'], 'client');
   api.use('momentjs:moment@2.10.6', 'client');

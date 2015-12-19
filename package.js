@@ -2,7 +2,7 @@ Package.describe({
   name: "clinical:autoform",
   summary: "Easily create forms with automatic insert and update, and automatic reactive validation.",
   git: "https://github.com/clinical-meteor/clinical-autoform.git",
-  version: "6.8.3"
+  version: "6.8.4"
 });
 
 Package.onUse(function (api) {
